@@ -22,12 +22,12 @@ Users should be able to:
 ### Screenshot
 
 (./images/finished-card.png)
+(/images/finished-card.png)
 
+./images/finished-card.png
 ### Links
 
 - Solution URL: https://echucode.github.io/nftCard/
-
-## My process
 
 ### Built with
 
