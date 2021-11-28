@@ -17,4 +17,126 @@
 body{
     font-family: 'Outfit', sans-serif;
     font-size:18px;
+    background-color:var(--Very-dark-blue-main-BG);
+    width:100%;
+    height:100%;
+}
+/*CARD BODY*/
+.card-container{
+    position:relative;
+    margin:50px auto;
+    max-width:350px;
+    height:560px;
+    background-color: var(--Very-dark-blue-card-BG);
+    border-radius:10px;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    box-shadow:20px 30px 5px rgba(8, 14, 24, 0.200), -20px 30px 5px rgba(8, 14, 24, 0.200);
+}
+
+/*CARD IMAGE*/
+.card-image{
+    margin-top:20px;
+    width: 300px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.card-image:after{
+    content:"";    
+    position:absolute;
+    width: 300px;
+    height:300px;
+    border-radius:10px;
+    transition:0.3s;
+}
+.card-image:hover:after{
+    background-color:hsla(178, 100%, 50%, 0.397) ;
+    content:"";
+    position:absolute;
+    width: 300px;
+    height:300px;
+    border-radius:10px;
+    transition:0.3s;
+}
+#cardimg{
+    height:auto;
+    width:100%;
+    border-radius:10px;
+    transition:0.3s;
+}
+#viewIcon{
+    opacity: 0;
+    position:absolute;
+    transition:0.3s;
+}
+.card-image:hover #viewIcon{
+    opacity: 1;
+    transition:0.3s;
+}
+
+/*CARD INFO (NAME, DESCRIPTION, PRICE and TIME*/
+#cardName{
+    color:white;
+    transition:0.3s;
+}
+.card-info{
+    margin:10px 30px;
+    display:flex;
+    flex-direction: column;
+}
+.more-info{
+    display:flex;
+    justify-content: space-between;
+    margin-top:20px;
+}
+.lbText{
+    color:var(--Soft-blue);
+    margin-top:10px;
+}
+.ethColor{
+    color:var(--Cyan);
+}
+
+
+/*CARD FOOTER*/
+.card-footer{
+    width:300px;
+    height:auto;
+    margin:10px 30px;
+    border-top:solid 2px var(--Very-dark-blue-line);
+}
+.footer-content{
+    display:flex;
+    width:100%;
+    margin-top:15px;
+}
+.avatarImage-container{
+    width:40px;
+    height:40px;
+}
+
+#avatarImage{
+    border:solid white 1px;
+    border-radius:50%;
+    width:100%;
+    height:auto;
+}
+.footer-text{
+    margin-top:10px;
+    margin-left:20px;
+}
+#creationOf{
+    color:var(--Soft-blue);
+}
+#Jules{
+    color:white;
+    transition:0.3s;
+}
+
+#cardName:hover, #Jules:hover{
+    color:var(--Cyan);
+    transition:0.3s;
+    cursor:pointer;
 }
